@@ -7,13 +7,16 @@
 **Monitor → Predict → Communicate → Protect**
 
 ---
-**Problem Statement ID - skhoi037**
-**Problem Statement Title - AI-Based Integrated Wearable Device for Real Time Monitoring of
-Vital Parameters, Gas Exposure and Fatigue**
-**Theme - Open Innovation**
-**PS Category- Software/Hardware -Hardware**
-**Team ID - V9RK2F**
-**Team Name - Team Vitaguard**
+## 🏆 Hackathon Details
+
+| Field | Details |
+|---|---|
+| **Problem Statement ID** | skhoi037 |
+| **Problem Statement Title** | AI-Based Integrated Wearable Device for Real Time Monitoring of Vital Parameters, Gas Exposure and Fatigue |
+| **Theme** | Open Innovation |
+| **PS Category** | Software/Hardware - Hardware |
+| **Team ID** | V9RK2F |
+| **Team Name** | Team Vitaguard |
 
 ---
 ## 🚨 The Problem
