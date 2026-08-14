@@ -1,17 +1,3 @@
-/*
- * VitaGuard 2.0 - ESP32 Prototype Firmware
- *
- * Prototype firmware demonstrating:
- * - Sensor data collection structure
- * - Risk score calculation
- * - Local buzzer alert
- * - Serial monitoring
- *
- * NOTE:
- * This is a prototype/simulation layer.
- * Replace simulated sensor values with actual sensor
- * readings when the hardware modules are connected.
- */
 
 #define BUZZER_PIN 25
 
@@ -63,12 +49,6 @@ void setup() {
 }
 
 void loop() {
-
-  /*
-   * Prototype sensor values.
-   * These values will later be replaced by
-   * readings from the actual sensors.
-   */
 
   int riskScore = calculateRiskScore();
 
