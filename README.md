@@ -7,7 +7,15 @@
 **Monitor → Predict → Communicate → Protect**
 
 ---
+Problem Statement ID - skhoi037
+Problem Statement Title - AI-Based Integrated Wearable Device for Real Time Monitoring of
+Vital Parameters, Gas Exposure and Fatigue
+Theme - Open Innovation
+PS Category- Software/Hardware -Hardware
+Team ID - V9RK2F
+Team Name - Team Vitaguard
 
+---
 ## 🚨 The Problem
 
 Workers in hazardous environments can face multiple risks at the same time:
@@ -62,58 +70,33 @@ Long-range LoRa communication with a base station
 
 ## ⚙️ How It Works
 
-``
-                    👷 WORKER
-                       │
-                       ▼
-              ┌─────────────────┐
-              │     SENSORS     │
-              │                 │
-              │  Gas • Vitals   │
-              │  Temperature    │
-              │  Motion         │
-              └────────┬────────┘
-                       │
-                       ▼
-              ┌─────────────────┐
-              │      ESP32      │
-              │ Data Collection │
-              │  & Processing   │
-              └────────┬────────┘
-                       │
-                       ▼
-              ┌─────────────────┐
-              │ RISK ASSESSMENT │
-              │   & AI ANALYSIS │
-              └────────┬────────┘
-                       │
-                ┌──────┴──────┐
-                │             │
-                ▼             ▼
-          🚨 LOCAL ALERT    📡 LoRa
-          Buzzer/Haptic       │
-                              ▼
-                       ┌─────────────┐
-                       │ BASE STATION│
-                       └──────┬──────┘
-                              │
-                              ▼
-                         SUPERVISOR
-`
+VitaGuard follows a simple monitoring and alert pipeline:
 
-### Four stages
+**👷 Worker**  
+↓  
+**📡 Sensors** — Gas • Vitals • Temperature • Motion  
+↓  
+**🧠 ESP32** — Data Collection & Processing  
+↓  
+**⚠️ Risk Assessment** — Risk Scoring & Analysis  
+↓  
+**🚨 Local Alert** — LoRa • Buzzer • Haptic  
+↓  
+**🏢 Base Station / Supervisor**
 
-**01 — Sense**
-Collect worker and environmental data.
+### Four Stages
 
-**02 — Process**
-ESP32 receives and processes sensor readings.
+**01 — Sense**  
+Collect worker and environmental data through the connected sensors.
 
-**03 — Assess**
-The system evaluates the worker's safety/risk condition.
+**02 — Process**  
+The ESP32 receives and processes the sensor readings.
 
-**04 — Communicate & Alert**
-Local alerts are generated and important information is sent through LoRa.
+**03 — Assess**  
+The system evaluates the collected data and generates a risk score. AI-based analysis is part of the planned enhancement.
+
+**04 — Alert**  
+When a risk is detected, the system triggers a local alert and sends the information toward the base station/supervisor.
 
 ---
 
