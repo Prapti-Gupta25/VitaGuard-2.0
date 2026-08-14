@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- Background -->
+    <color name="primaryBg">#0A1F44</color>
+
+    <!-- Cards - softer blue, not too dark -->
+    <color name="cardBg">#1A3A6B</color>
+
+    <!-- Primary Accent - bright rescue orange -->
+    <color name="accentOrange">#FF7043</color>
+
+    <!-- Secondary Accent - fresh green for "safe/ok" status -->
+    <color name="safeGreen">#00E676</color>
+
+    <!-- Alert - bright red for emergency -->
+    <color name="alertRed">#FF5252</color>
+
+    <!-- Info - sky blue for stats/data -->
+    <color name="infoBlue">#40C4FF</color>
+
+    <!-- Warning -->
+    <color name="warningYellow">#FFD740</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#B0BEC5</color>
+
+    <!-- Button background -->
+    <color name="buttonColor">#FF7043</color>
+
+</resources>

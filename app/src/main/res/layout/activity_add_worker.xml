@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0A1F44">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Worker"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/workerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Worker Name"
+            android:background="#FFFFFF"
+            android:layout_marginTop="130dp"
+            android:padding="12dp"
+            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/workerZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Work Zone"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveWorkerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F44336"
+            android:text="Save Worker"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="40dp"
+            app:elevation="4dp"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</ScrollView>

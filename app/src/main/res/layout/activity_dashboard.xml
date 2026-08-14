@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#153A6E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ResQTrack Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!-- Leader Info -->
+        <TextView
+            android:id="@+id/leaderNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Leader: Rahul"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Team: NDRF Unit 5"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <!-- Stats Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="#132F5C"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/totalWorkersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Workers: 0"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/safeCountText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="Safe: 0"
+                    android:textColor="#00FF9C"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/dangerCountText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="Danger: 0"
+                    android:textColor="#FF5252"
+                    tools:ignore="HardcodedText,SpUsage" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addWorkerBtn"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="45dp"
+            android:background="#FF6B00"
+            android:text="Add Worker"
+            android:textSize="19sp"
+            app:cornerRadius="100dp"
+            app:shapeAppearanceOverlay="@style/RoundedButton"
+            tools:ignore="HardcodedText,VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/viewWorkersBtn"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginTop="10dp"
+            android:text="View Workers"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/alertsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginBottom="50dp"
+            android:text="Alerts"
+            android:textSize="19sp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</ScrollView>

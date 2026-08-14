@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1F44">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="450dp">
+
+        <!-- actual image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/photo"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:background="@drawable/top_image_bg"
+            tools:ignore="ContentDescription,UnusedAttribute" />
+
+        <!-- fade overlay on top -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/top_image_bg" />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ResQTrack"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real-Time Rescue Health Monitoring"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
